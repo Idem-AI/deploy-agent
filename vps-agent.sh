@@ -21,7 +21,7 @@ AGENT_SCRIPT_PATH="$AGENT_DIR/agent.py"
 BOOTSTRAP_PATH="$AGENT_DIR/bootstrap.sh"
 SYSTEMD_UNIT="/etc/systemd/system/deploy-agent.service"
 
-BASE_URL="https://github.com/ton-user/deploy-agent/releases/download/$VERSION"
+BASE_URL="https://github.com/Idem-AI/deploy-agent/releases/download/$VERSION"
 
 echo "[install-agent] ORCH_URL = $ORCH_URL"
 echo "[install-agent] AGENT_DIR = $AGENT_DIR"
