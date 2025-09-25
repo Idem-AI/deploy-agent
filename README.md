@@ -37,15 +37,15 @@ It connects to the orchestration platform (`ORCH_URL`) and automates the deploym
 On your VPS, run the following one-liner:
 
 ```bash
-curl -fsSL https://github.com/<your-user>/deploy-agent/releases/download/v1.0.0/install-agent.sh | sudo bash -s -- https://orchestrator.example.com
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/vps-agent.sh | sudo bash -s -- https://orchestrator.idem.africa
 ```
 
-👉 Replace `https://orchestrator.example.com` with your orchestrator URL.
+👉 Replace `https://orchestratoridem.africam` with your orchestrator URL.
 
 To skip bootstrap preparation:
 
 ```bash
-curl -fsSL https://github.com/<your-user>/deploy-agent/releases/download/v1.0.0/install-agent.sh | sudo bash -s -- https://orchestrator.example.com --no-bootstrap
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/install-agent.sh | sudo bash -s -- https://orchestrator.idem.africa --no-bootstrap
 ```
 
 ---
@@ -71,7 +71,7 @@ journalctl -u deploy-agent.service -f
 To upgrade to the **latest release**:
 
 ```bash
-curl -fsSL https://github.com/<your-user>/deploy-agent/releases/latest/download/install-agent.sh | sudo bash -s -- https://orchestrator.example.com
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/latest/download/vps-agent.sh | sudo bash -s -- https://orchestrator.idem.africa
 ```
 
 The installer will:
@@ -84,7 +84,7 @@ The installer will:
 
 ## 🛡️ Security Considerations
 
-* ✅ All artifacts (`install-agent.sh`, `agent.py`, `bootstrap_vps.sh`) are distributed via **GitHub Releases**, ensuring immutability and trust.
+* ✅ All artifacts (vps-agent.sh`, `agent.py`, `bootstrap.sh`) are distributed via **GitHub Releases**, ensuring immutability and trust.
 * ✅ Tokens are stored locally at `/etc/deploy-agent/token.json` with `600` permissions.
 * ✅ The agent runs as `root` to manage deployments but is sandboxed through strict directory usage (`/opt/deploy-agent`, `/opt/apps`).
 * ✅ Environment variables are written securely into `.env` files with `600` permissions to prevent leaks.
