@@ -1,6 +1,6 @@
----
+# IDEM  Deploy Agent
 
-# 🚀 Deploy Agent
+---
 
 **Deploy Agent** is a lightweight service that runs on your VPS.
 It connects to the orchestration platform (`ORCH_URL`) and automates the deployment of containerized applications on your infrastructure.
