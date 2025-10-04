@@ -8,7 +8,7 @@ set -euo pipefail
 
 ORCH_URL="${1:-}"
 NO_BOOTSTRAP_FLAG="${2:-}"
-VERSION="v1.0.0"
+VERSION="v1.1.0"
 
 if [ -z "$ORCH_URL" ]; then
   echo "Usage: sudo $0 <ORCH_URL> [--no-bootstrap]"
