@@ -37,11 +37,13 @@ chown root:root "$AGENT_DIR"
 chmod 755 "$AGENT_DIR"
 
 echo "[install-agent] Downloading agent script from GitHub release ..."
-curl -fsSL "$BASE_URL/agent.py" -o "$AGENT_SCRIPT_PATH"
+
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/agent.py  -o "$AGENT_SCRIPT_PATH"
+# curl -fsSL "$BASE_URL/agent.py" -o "$AGENT_SCRIPT_PATH"
 chmod 750 "$AGENT_SCRIPT_PATH"
 
 echo "[install-agent] Downloading bootstrap script from GitHub release ..."
-curl -fsSL "$BASE_URL/bootstrap.sh" -o "$BOOTSTRAP_PATH"
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/bootstrap.sh -o "$BOOTSTRAP_PATH"
 chmod 750 "$BOOTSTRAP_PATH"
 
 echo "[install-agent] Creating python venv for agent..."
