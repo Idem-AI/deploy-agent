@@ -37,7 +37,7 @@ It connects to the orchestration platform (`ORCH_URL`) and automates the deploym
 On your VPS, run the following one-liner:
 
 ```bash
-curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/vps-agent.sh | sudo bash -s -- https://orchestrator.idem.africa
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.1.0/vps-agent.sh | sudo bash -s -- https://orchestrator.idem.africa
 ```
 
 👉 Replace `https://orchestratoridem.africam` with your orchestrator URL.
@@ -45,7 +45,7 @@ curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/vps-
 To skip bootstrap preparation:
 
 ```bash
-curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.0.0/install-agent.sh | sudo bash -s -- https://orchestrator.idem.africa --no-bootstrap
+curl -fsSL https://github.com/Idem-AI/deploy-agent/releases/download/v1.1.0/install-agent.sh | sudo bash -s -- https://orchestrator.idem.africa --no-bootstrap
 ```
 
 ---
